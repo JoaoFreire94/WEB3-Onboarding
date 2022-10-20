@@ -3,7 +3,7 @@ import { Button, Center, Spinner, Heading, useToast } from '@chakra-ui/react';
 import { useEffect } from 'react';
 import { useNavigate } from 'react-router-dom';
 
-import { LogouButton } from '../../components/LogoutButton';
+import { LogoutButton } from '../../components/LogoutButton';
 import { ME } from '../../graphql/querys/me';
 import LS from '../../utils/localStorage';
 
@@ -44,7 +44,7 @@ function HomePage(): JSX.Element {
         <Heading variant="headerStyle" color="white" size="2xl" p="80px">
           Welcome to the web 3 {data.me}, you are awesome!!
         </Heading>
-        <LogouButton />
+        <LogoutButton />
       </Center>
     );
   }

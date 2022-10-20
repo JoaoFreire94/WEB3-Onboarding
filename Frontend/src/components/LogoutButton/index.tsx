@@ -5,7 +5,7 @@ import { useNavigate } from 'react-router-dom';
 
 import LS from '../../utils/localStorage';
 
-export function LogouButton(): JSX.Element {
+export function LogoutButton(): JSX.Element {
   const [token, setToken] = useState('');
   const navigate = useNavigate();
 
@@ -18,7 +18,11 @@ export function LogouButton(): JSX.Element {
     navigate('/login');
   };
   if (token) {
-    return <Button onClick={handleClick}>Logout</Button>;
+    return (
+      <Button onClick={handleClick} bg="grey" color="white">
+        Logout
+      </Button>
+    );
   }
   return <></>;
 }
