@@ -2,16 +2,16 @@
 import { Button } from '@chakra-ui/react';
 import { useNavigate } from 'react-router-dom';
 
-export function SignInButton(): JSX.Element {
+export function LoginButton(): JSX.Element {
   const navigate = useNavigate();
 
   const handleClick = (): void => {
-    navigate('/signup');
+    navigate('/login');
   };
 
   return (
-    <Button onClick={handleClick} m="20px" bg="grey" color="white">
-      Sign Up
+    <Button onClick={handleClick} mt="30px" bg="grey" color="white">
+      Go to Login
     </Button>
   );
 }
